@@ -15,15 +15,31 @@
       <form>
         <!-- write your html here-->
          <fieldset>
-          <legend>Choose your favorite fruit:</legend>
-          <input type="radio" id="apple" name="fruit" value="apple" />
-          <label for="apple">Apple</label><br />
-          <input type="radio" id="banana" name="fruit" value="banana" />
-          <label for="banana">Banana</label><br />
-          <input type="radio" id="cherry" name="fruit" value="cherry" />
-          <label for="cherry">Cherry</label><br />
-          <input type="radio" id="date" name="fruit" value="date" />
-          <label for="date">Date</label><br />
+          <legend>Personal Information</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+        </fieldset>
+        <fieldset>
+          <legend>Product Details</legend>
+          <label for="product">T-shirt Colour:</label>
+            <input type="radio" id="red" name="Colour" value="Red" />
+            <label for="red">Red</label>
+            <input type="radio" id="blue" name="Colour" value="Blue" />
+            <label for="blue">Blue</label>
+            <input type="radio" id="green" name="Colour" value="Green" />
+            <label for="green">Green</label><br /><br />
+          </select><br /><br />
+          <label for="size">Size:</label>
+          <select id="size" name="size" required>
+            <option value="">--Please choose an option--</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select><br /><br />
          </fieldset>
         <!-- 
           try writing out the requirements first as comments
@@ -32,7 +48,7 @@
     </main>
     <footer>
       <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <h2>By Mahammad Osman</h2>
     </footer>
   </body>
 </html>
