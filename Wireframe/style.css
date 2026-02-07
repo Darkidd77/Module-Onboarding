@@ -31,6 +31,7 @@ body {
   color: var(--ink);
   font: var(--font);
   margin: 0; 
+  margin-bottom: 100px;
   padding: 0; 
   min-height: 100vh;
 }
@@ -46,7 +47,13 @@ a {
 }
 img,
 svg {
+  height: 300px;
   width: 100%;
+  object-fit: contain;
+}
+
+section article img {
+  height: 300px;
   object-fit: cover;
 }
 /* ====== Site Layout ====== 
@@ -63,7 +70,9 @@ footer {
   text-align: center;
   width: 100%;
   background: var(--paper);
-  
+  padding: var(--space);
+  border-top: var(--line); 
+    
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.
